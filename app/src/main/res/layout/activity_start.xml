@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity"
+    android:layout_margin="10dp">
+
+    <Button
+        android:id="@+id/btnTest01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="act"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/btnTest02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnTest01"
+        android:text="act3"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/btnTest02_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnTest02"
+        android:text="dia"
+        android:layout_marginLeft="10dp"/>
+
+
+    <Button
+        android:id="@+id/btnTest03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btnTest01"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="line"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/btnTest04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btnTest01"
+        app:layout_constraintStart_toEndOf="@id/btnTest03"
+        android:text="time"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/btnTest05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btnTest01"
+        app:layout_constraintStart_toEndOf="@id/btnTest04"
+        android:text="worker"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/btnTest05_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btnTest01"
+        app:layout_constraintStart_toEndOf="@id/btnTest05"
+        android:text="ch"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/btnTest06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btnTest03"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="lineL"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/btnTest07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btnTest03"
+        app:layout_constraintStart_toEndOf="@id/btnTest06"
+        android:text="app"
+        android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:id="@+id/edittext_time"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="1300"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@id/btnTest07"
+        app:layout_constraintBottom_toBottomOf="@id/btnTest07"/>
+
+    <TextView
+        android:id="@+id/mem"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:layout_constraintTop_toBottomOf= "@id/btnTest06"
+        android:layout_marginTop="30dp"
+        android:text=""
+
+         />
+
+    <ProgressBar
+        android:id="@+id/loading_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
